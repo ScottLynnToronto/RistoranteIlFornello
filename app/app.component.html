@@ -1,40 +1,25 @@
-<head>
-<style>
-.nav-bgColor {
-    background-color: #2F3BA1;
-    font-color: #FFFFFF;    
-}
-
-.jumbotron-bgColor  {
-    background-color: #7884CD;
-}
-
-.jumbotron-bgColor p {
-    color: white;
-}
-
-.jumbotron-bgColor h1 {
-    color: white;
-}
-
-.footer {
-  background-color: #AFAFAF;
-}
-
-
-</style>
-</head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
 <link rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Static navbar -->
     <nav class="navbar navbar-default navbar-fixed-top nav-bgColor">
-      <div class="container nav-bgColor">
-        <div id="navbar" class="navbar-collapse collapse nav-bgColor">
-          <ul class="nav navbar-nav nav-bgColor">
-            <li class="active nav-bgColor"><a href="#">Home</a></li>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Ristorante Il Fornello</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
               aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
@@ -44,19 +29,25 @@
                 <li><a href="#">Pasta</a></li>
                 <li><a href="#"> Mains</a></li>
                 <li><a href="#">Pizza</a></li>
+                <li><a href="#">Dessert</a></li>
+                <li><a href="#">Beverages</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">View All</a></li>
+                <li><a href="#">IL FORNELLO Gift Cards</a></li>
               </ul>
             </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
+        </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="jumbotron jumbotron-bgColor">
-      <div class="container jumbotron-bgColor">
-        <h1 style="color:white">Ristorante Il Fornello</h1>
-        <br/><br/>
-        <p>Simple, fresh ingredients, prepared and cooked with ove and passion become truly great dishes, from wood-oven baked Neapolitan style pizzas to pastas, entress!</p>     
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Ristorante Il Fornello</h1>
+        <p>Simple, fresh ingredients, prepared and cooked with ove and passion become</p>
+        <p>truly great dishes, from wood-oven baked Neapolitan style pizzas to pastas,</p>
+        <p>entress!</p>     
       </div>
     </div>
 
@@ -108,7 +99,7 @@
     
     <div class="container">
       <div class="row">
-            <div class="col-md-12">
+        <div class="col-md-12">
           <h3 class="menuItems">IL FORNELLO MENU</h3>
         </div>
         <ag-grid-ng2 #agGrid class="ag-material col-md-12" rowHeight="50" 
@@ -163,7 +154,8 @@
         <p class="text-center">&copy; Copyright 2015 Ristorante Il Fornello</p>
       </footer>
 
-    </div> 
+
+    </div> <!-- /container -->
 
 
 
